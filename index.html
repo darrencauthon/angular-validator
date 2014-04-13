@@ -27,6 +27,16 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="requiredRadio" class="col-md-2 control-label">Required Radio</label>
+                        <div class="col-md-10">
+                            <input ng-model="formWatch.requiredRadio" value="Yes" type="radio" required>
+                                Yes
+                            <input ng-model="formWatch.requiredRadio" value="No" type="radio" required>
+                                No
+                            <input type="submit">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="regexp0" class="col-md-2 control-label">RegExp [a-z]</label>
                         <div class="col-md-10">
                             <input type="text" ng-model="formWatch.regexp" validator="/[a-z]/" validator-invoke="watch" validator-error="it should be /[a-z]/" class="form-control" id="regexp0" placeholder="RegExp [a-z]"/>
